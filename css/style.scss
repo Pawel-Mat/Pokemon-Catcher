@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+$color-dark: #2d2d2d;
+$color-card-background: #792e2e;
+$color-button: #48ff00;
+
+body {
+  background-color: $color-dark;
+  text-align: center;
+}
+
+section, header {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.home {
+  margin: 0 auto;
+  display: none;
+}
+.name-wrapper, .main {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  color:whitesmoke;
+  margin-top: 200px;
+  background-color: $color-dark;
+  height: 300px;
+}
+
+h1 {
+  font-size: 62px;
+  color: white;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+input {
+  display: block;
+  padding: 0;
+  font-size: 62px;
+  width: 20%;
+  margin: 100px auto;
+  background-color: $color-dark;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+label {
+  width: 40%;
+  height: 200px;
+  border-bottom: 1px solid whitesmoke;
+
+}
+.btn {
+  margin-top: 100px;
+  padding: 15px;
+  font-size: 24px;
+  color: #000000;
+  background-color: $color-button;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #d9e441;
+  }
+}
+
+.main {
+  display: none;
+  z-index: 100;
+}
+
+.poke-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto auto auto;
+  background-color: $color-dark;
+  
+  & .poke-card {
+    background-color: $color-card-background;
+    border-radius: 20px;
+    width: 200px;
+    height: 270px;
+    box-shadow: 0 0 2em black;
+    padding: 10px;
+  }
+
+  & img {
+    width: 180px;
+  }
+
+  & h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+  
+.active {
+  display: block;
+}
+
+
