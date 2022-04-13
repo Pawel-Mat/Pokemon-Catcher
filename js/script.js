@@ -56,12 +56,9 @@ const app = () => {
   .then(response => response.json())
   .then(json => { 
     jsonData = json;
-    console.log('jsonData', jsonData);
-    console.log('json', json);
     for (i=0; i<5; i++) {
       generatePokemon(jsonData);
     }
-    console.log('generated', generatedPokemons);
   })
   .catch(err => {
     console.log('error!!!');
@@ -100,7 +97,7 @@ catchButton.addEventListener('click', () => {
     generatePokemon(jsonData);
     generatePokemon(jsonData);
     generatePokemon(jsonData);
-    console.log(catchedPokemons);
+    console.log('Catched Pokemons', catchedPokemons);
 })
 
 // input name //
